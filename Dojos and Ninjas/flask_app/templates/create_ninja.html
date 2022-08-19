@@ -1,0 +1,32 @@
+<div>
+    <h1>New Ninja</h1>
+</div>
+<div>
+    <form action="/ninjas/create" method="post" class="form">
+        <div>
+            <label>Dojo:</label>
+            <select name="dojo_id">
+                <option value="">---location---</option>
+                {% for dojo in dojos %}
+                <option value="{{dojo.id}}">{{dojo.name}}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="fname flex space-between">
+            <label>First Name:</label>
+            <input type="text" name="first_name" placeholder="first name">
+        </div>
+        <div class="lname flex space-between">
+            <label>Last Name:</label>
+            <input type="text" name="last_name" placeholder="last name">
+        </div>
+        <div class="email flex space-between">
+            <label>Age:</label>
+            <input type="number" name="age" placeholder="age">
+        </div>
+        <div class="button">
+            <button class="btn flex justify-center">Create</button>
+        </div>
+    </form>
+    <a href="/dojos" class="home">Home</a>
+</div>

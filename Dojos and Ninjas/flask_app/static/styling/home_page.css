@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.align-center {
+    align-items: center;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+h1 {
+    color: royalblue;
+    border-bottom: 2px solid white;
+}
+.left, .right {
+    background-color: #2c3034;
+    color: white;
+}
+.loc:link, .loc:visited {
+    color: goldenrod;
+}
+.button {
+    margin: 10px 0px;
+}
